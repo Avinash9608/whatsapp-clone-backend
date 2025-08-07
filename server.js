@@ -12,7 +12,7 @@ const server = http.createServer(app);
 // Initialize Socket.IO
 const io = new Server(server, {
   cors: {
-    origin: 'http://localhost:5173', // Frontend URL
+    origin: ['http://localhost:5173', 'https://whatsapp-clone-frontend-alpha.vercel.app'], // Frontend URLs
     methods: ['GET', 'POST'],
     credentials: true
   }
